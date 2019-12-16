@@ -1,9 +1,7 @@
 var FishTable = () => (
   <table>
     <tbody>
-      <FishTableRow />
-      <FishTableRow />
-      <FishTableRow />
+      {this.propos.fishes.map((fish) => (<FishTableRow fish={fish}/>))}
     </tbody>
   </table>
 );
